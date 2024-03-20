@@ -1,5 +1,5 @@
 import { setGlobalState, useGlobalState } from "../store";
-import Typewriter from "typewriter-effect/dist/core";
+import Typewriter from "typewriter-effect";
 const Hero = () => {
   const [stats] = useGlobalState("stats");
 
@@ -15,6 +15,29 @@ const Hero = () => {
         <br />
         <span className=" text-green-600">CryptoFund💚</span>
       </h1>
+
+      <h1 className="text-lg md:text-lg xl:text-lg font-extralight tracking-tight mb-9 ">
+        <Typewriter
+          options={{
+            loop: true, // Set loop option to true
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("MEDICAL🏥")
+              .pauseFor(1000) // pause after typing
+              .deleteAll()
+              .typeString("CHILDREN SUPPORT👶")
+              .pauseFor(1000) // pause after typing
+              .deleteAll()
+              .typeString("EDUCATION ASSISTANCE📕")
+              .pauseFor(1000) // pause after typing
+              .deleteAll()
+              .typeString("ANIMAL WELLBEING🦊")
+              .start(); // start the typewriter
+          }}
+        />
+      </h1>
+
       <div className="flex justify-center items-center space-x-2">
         <button
           type="button"

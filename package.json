@@ -26,6 +26,7 @@
     "react-router-dom": "6",
     "react-scripts": "5.0.0",
     "react-toastify": "^9.1.1",
+    "react-typed": "^2.0.12",
     "truffle": "^5.11.5",
     "typewriter-effect": "^2.21.0",
     "web-vitals": "^2.1.4"
